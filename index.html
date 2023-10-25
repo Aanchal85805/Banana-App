@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana app</title>
+    <style>
+        #first{
+            background-color: #f2C946;
+            align-items: center;
+            height: 80px;
+            padding: 16px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body{
+            margin: 0;
+            font-family: 'Kalam', cursive;
+             color: #333333;
+        }
+        textarea {
+            box-sizing: border-box;
+            display: block;
+            width: 50%;
+            min-height: 20vh;
+            margin-top: 2rem;
+            font-size: large;
+            font-family: inherit;
+        }
+        .btn-translate {
+            background-color: #f2C946;
+            border: none;
+            margin: 1rem 0rem;
+            padding: 1rem 2rem;
+            font-family: 'Kalam', cursive;
+            font-size: large;
+        }
+        * {
+            box-sizing: border-box;
+        }
+            #main{
+                margin: auto;
+                padding: 16px;
+                max-width: var(--width-break);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            main{
+                display: block;
+            }
+
+                
+                
+                #outputdiv {
+            box-sizing: border-box;
+                width: 50%;
+                height: 10vh;
+                overflow: scroll;
+                border: 1px solid black;
+        }
+        .footer{
+        width: 100%;
+        background-color: #f2C946;
+        padding: 40px;
+        margin-top: 80PX;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        }
+        footer{
+           
+        }
+            </style>
+        
+        </head>
+        <body>
+            <div id="first">
+                <h1>banana talk</h1>
+            </div>
+            <div id="main">
+                <textarea id ="txt-input" placeholder="put your sentence in english here and we will convert in it to banana"></textarea>
+
+                <button class="btn-translate"> Translate to banana</button>
+                
+                <div>Output is here </div>
+                
+                <div id="outputdiv">
+                
+                </div>
+
+            </div>
+
+            <footer>
+                <div class="footer">
+                    <div>about</div>
+
+                <div class="paragraph">
+
+                    Are you a fan of minions? Did you know that the gibberish they say is an actual language. <br>
+                    Use the translator to convert your text from English to Minion speak or Banana language. 
+                
+                </div>  
+                    
+            
+                </div>
+                
+            </footer>
+
+        
+
+        <script src="/app.js"></script>
+        </body>
+        </html>
